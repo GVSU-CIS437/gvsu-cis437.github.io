@@ -29,18 +29,18 @@ The following schedule is tentative and may be adjusted during the semester.
 
 | Module | Topics Covered | Materials |
 | --- | --- | --- |
-| 1 | Syllabus and Introduction to Cloud Computing | Materials will be posted on Blackboard and the course website |
-| 2 | Cloud Platforms | Materials will be posted on Blackboard and the course website |
-| 3 | Cloud Shell and Cloud Applications | Materials will be posted on Blackboard and the course website |
-| 4 | Infrastructure-, Platform-, and Software-as-a-Service; Microservices; Serverless Computing | Materials will be posted on Blackboard and the course website |
-| 5 | Cloud Security and Geographic Implications | Materials will be posted on Blackboard and the course website |
-| 6 | Processing Data of Various Sizes | Materials will be posted on Blackboard and the course website |
-| 7 | Application Programming Interfaces | Materials will be posted on Blackboard and the course website |
-| 8 | Cloud Run and Cloud Build | Materials will be posted on Blackboard and the course website |
-| 9 | Cloud Operations | Materials will be posted on Blackboard and the course website |
-| 10 | Machine Learning and Generative AI in the Cloud | Materials will be posted on Blackboard and the course website |
-| 11 | Midterm Exam | Thursday, October 15, 2:30 pm–3:45 pm |
-| 12 | Final Exam | Thursday, December 17, 2:00 pm–3:50 pm |
+| 1 | Syllabus and Introduction to Cloud Computing | ... |
+| 2 | Cloud Platforms | ... |
+| 3 | Cloud Shell and Cloud Applications | ... |
+| 4 | Infrastructure-, Platform-, and Software-as-a-Service; Microservices; Serverless Computing | ... |
+| 5 | Cloud Security and Geographic Implications | ... |
+| 6 | Processing Data of Various Sizes | ... |
+| 7 | Application Programming Interfaces | ... |
+| 8 | Cloud Run and Cloud Build | ... |
+| 9 | Cloud Operations | ... |
+| 10 | Machine Learning and Generative AI in the Cloud | ... |
+| 11 | Midterm Exam -- Thursday, October 15, 2:30 pm–3:45 pm |  |
+| 12 | Final Exam -- Thursday, December 17, 2:00 pm–3:50 pm |  |
 
 ## Important Dates
 
