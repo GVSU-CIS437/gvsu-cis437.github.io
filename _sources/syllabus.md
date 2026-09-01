@@ -24,7 +24,7 @@ to Cloud Computing! This hands-on course introduces the foundations of cloud com
 - **Midterm Exam:** Thursday, October 15, 2:30 pm - 3:45 pm
 - **Final Exam:** Thursday, December 17, 2:00 pm - 3:50 pm
 
-## Course Topics
+## Tentative Schedule
 
 The following schedule is tentative and may be adjusted during the semester.
 
@@ -46,13 +46,3 @@ The following schedule is tentative and may be adjusted during the semester.
 | 14 (11/30) | ... | ... |
 | 15 (12/7) | ... | ... |
 | 16(12/14) | **No Regular Class** | **Final Exam** |
-
-## Important Dates
-
-| Date           | Event               |
-| -------------- | ------------------- |
-| September 6–7  | Labor Day Recess    |
-| October 15     | Midterm Exam        |
-| October 26–27  | Fall Break          |
-| November 25–29 | Thanksgiving Recess |
-| December 17    | Final Exam          |
