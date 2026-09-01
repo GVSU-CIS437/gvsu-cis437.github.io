@@ -38,7 +38,7 @@ The following schedule is tentative and may be adjusted during the semester.
 | 6 (10/5) | ... | ... |
 | 7 (10/12) | ... | **Midterm Exam** |
 | 8 (10/19) | ... | ... |
-| 9 (10/26) | **Fall Break** | **No Class** |
+| 9 (10/26) | **Fall Break No Class** | ... |
 | 10 (11/2) | ... | ... |
 | 11 (11/9) | ... | ... |
 | 12 (11/16) | ... | ... |
