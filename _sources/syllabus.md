@@ -11,7 +11,6 @@ to Cloud Computing! This hands-on course introduces the foundations of cloud com
 - <i class="fa fa-building"></i> **Office Hours:** Tuesday and Thursday, 4:00 pm–5:00 pm, in person or through Zoom
 - <i class="fa fa-book"></i> **Course Page:** [Blackboard](https://lms.gvsu.edu/)
 - <i class="fa fa-book-reader"></i> **Syllabus:** [View the syllabus here](assets/pdf/syllabus.pdf)
-- <i class="fa fa-video"></i> **Zoom:** Meeting ID: 396 668 6420, Password: 587684
 
 ## Class Schedule
 
@@ -20,6 +19,8 @@ to Cloud Computing! This hands-on course introduces the foundations of cloud com
 - **Class Time:** Tuesday and Thursday
 - **Class Time** 2:30 pm–3:45 pm
 - **Course Format** Online synchronous
+- **Zoom** [Join the live class](https://gvsu-edu.zoom.us/j/3966686420?pwd=WGxpc0N4YWcvOU9aWGxWZGYxbXZUdz09)
+- **Async Chat** [Discord](https://discord.gg/XGNvSQGZA)
 - **Midterm Exam:** Thursday, October 15, 2:30 pm - 3:45 pm
 - **Final Exam:** Thursday, December 17, 2:00 pm - 3:50 pm
 
