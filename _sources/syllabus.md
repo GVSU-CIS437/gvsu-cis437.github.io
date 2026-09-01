@@ -10,7 +10,7 @@ to Cloud Computing! This hands-on course introduces the foundations of cloud com
 - <i class="fa fa-building"></i> **Office:** MAK D-2-234
 - <i class="fa fa-building"></i> **Office Hours:** Tuesday and Thursday, 4:00 pm–5:00 pm, in person or through Zoom
 - <i class="fa fa-book"></i> **Course Page:** [Blackboard](https://lms.gvsu.edu/)
-- <i class="fa fa-book-reader"></i> **Syllabus:** [View the syllabus here](assets/pdf/syllabus.pdf)
+- <i class="fa fa-book-reader"></i> **Syllabus:** [View the syllabus here](assets/pdf/CIS-437-01-Zhuang.pdf)
 
 ## Class Schedule
 
@@ -28,20 +28,24 @@ to Cloud Computing! This hands-on course introduces the foundations of cloud com
 
 The following schedule is tentative and may be adjusted during the semester.
 
-| Module | Topics Covered | Materials |
+| Week | Tuesday | Thursday |
 | --- | --- | --- |
-| 1 | Syllabus and Introduction to Cloud Computing | ... |
-| 2 | Cloud Platforms | ... |
-| 3 | Cloud Shell and Cloud Applications | ... |
-| 4 | Infrastructure-, Platform-, and Software-as-a-Service; Microservices; Serverless Computing | ... |
-| 5 | Cloud Security and Geographic Implications | ... |
-| 6 | Processing Data of Various Sizes | ... |
-| 7 | Application Programming Interfaces | ... |
-| 8 | Cloud Run and Cloud Build | ... |
-| 9 | Cloud Operations | ... |
-| 10 | Machine Learning and Generative AI in the Cloud | ... |
-| 11 | Midterm Exam -- Thursday, October 15, 2:30 pm–3:45 pm |  |
-| 12 | Final Exam -- Thursday, December 17, 2:00 pm–3:50 pm |  |
+| 1 (8/31) | [Introduction](assets/pdf/Introduction.pdf) | ... |
+| 2 (9/7) | ... | ... |
+| 3 (9/14) | ... | ... |
+| 4 (9/21) | ... | ... |
+| 5 (9/28) | ... | ... |
+| 6 (10/5) | ... | ... |
+| 7 (10/12) | ... | **Midterm Exam** |
+| 8 (10/19) | ... | ... |
+| 9 (10/26) | **Fall Break** | **No Class** |
+| 10 (11/2) | ... | ... |
+| 11 (11/9) | ... | ... |
+| 12 (11/16) | ... | ... |
+| 13 (11/23) | ... | **Thanksgiving Recess – No Class** |
+| 14 (11/30) | ... | ... |
+| 15 (12/7) | ... | ... |
+| 16(12/14) | **No Regular Class** | **Final Exam** |
 
 ## Important Dates
 
