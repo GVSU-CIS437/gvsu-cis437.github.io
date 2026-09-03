@@ -30,7 +30,7 @@ The following schedule is tentative and may be adjusted during the semester.
 
 | Week | Tuesday | Thursday |
 | --- | --- | --- |
-| 1 (8/31) | [Introduction](assets/pdf/Introduction.pdf) | What is cloud computing? |
+| 1 (8/31) | [Introduction](assets/pdf/Introduction.pdf) | [What is cloud computing?](assets/pdf/What%20is%20cloud%20computing_.pdf) |
 | 2 (9/7) | Demo, Assignment 1 | ... |
 | 3 (9/14) | ... | ... |
 | 4 (9/21) | ... | ... |
