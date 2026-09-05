@@ -1,0 +1,34 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: GVSU CIS 437 - Web Application Programming
+author: Dr.Yong Zhuang
+copyright: "2025" # Copyright year to be placed in the footer
+logo: assets/img/logo.jpg #https://ok14static.oktacdn.com/fs/bco/1/fs065k6lzttLB13GH697
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: force
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/GVSU-CIS437/gvsu-cis437.github.io # Online location of your book
+  path_to_book: book # Optional path to your book, relative to the repository root
+  branch: main # Which branch of the repository should be used when creating links (optional)
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: true
+  use_repository_button: true
+  favicon: https://www.gvsu.edu/cms4/asset/94807988-C47A-2A7B-05628C365AC3C2FA/gvsu_avatar_3[1678817053].jpg

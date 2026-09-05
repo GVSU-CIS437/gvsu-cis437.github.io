@@ -1,0 +1,32 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: syllabus
+parts:
+  - caption: Resources
+    chapters:
+      - file: resources
+  # - caption: Quizzes
+  #   numbered: false
+  #   chapters:
+  # - file: quizzes/1
+  # - file: quizzes/2
+  # - file: quizzes/3
+  # - file: quizzes/4
+  # - file: quizzes/5
+  # - file: quizzes/6
+  # - file: quizzes/7
+
+  # - caption: Assignments
+  #   numbered: true
+  #   chapters:
+  #     - file: assignments/css-html
+  #     - file: assignments/bm
+  #     - file: assignments/cdm
+  #     - file: assignments/bs
+  # - file: assignments/bitc
+  # - file: assignments/bp
+  # - caption: Project
+  #   chapters:
+  #     - file: project/term
