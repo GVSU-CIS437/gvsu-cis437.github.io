@@ -62,8 +62,6 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/1';</script>
     <link rel="shortcut icon" href="https://www.gvsu.edu/cms4/asset/94807988-C47A-2A7B-05628C365AC3C2FA/gvsu_avatar_3[1678817053].jpg"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -383,9 +381,10 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confirm-your-credits">Confirm your credits</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-the-console-and-name-your-project">3. Explore the console and name your project</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-or-select-your-course-project">3. Create or select your course project</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-or-select-a-project">Create or select a project</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#link-your-project-to-billing">Link your project to billing</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rename-your-project">Rename your project</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verify-or-update-your-project-name">Verify or update your project name</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-an-ubuntu-virtual-machine">4. Create an Ubuntu virtual machine</a><ul class="nav section-nav flex-column">
@@ -462,13 +461,19 @@ using your GVSU email address (<code class="docutils literal notranslate"><span 
 check the signed-in Google account and the account shown on the redemption form.</p></li>
 <li><p>Redeem the coupon and complete the account setup.</p></li>
 </ol>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/gcp-credit1.jpg"><img alt="Education credit invitation." src="../_images/gcp-credit1.jpg" style="width: 650px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Education credit invitation form.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Request and redeem the coupon by <strong>December 31, 2026</strong>. The course credits are
 valid through <strong>August 31, 2027</strong>, unless used up earlier. This redemption deadline
 is separate from the assignment due date in Blackboard.</p>
-<figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../_images/gcp-credit.jpg"><img alt="Credit redemption form with an arrow connecting the account email and signed-in profile." src="../_images/gcp-credit.jpg" style="width: 650px;" /></a>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/gcp-credit2.jpg"><img alt="Credit redemption form with an arrow connecting the account email and signed-in profile." src="../_images/gcp-credit2.jpg" style="width: 650px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Check which account will receive the credits before redeeming your coupon.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Check which account will receive the credits before redeeming your coupon.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -477,11 +482,11 @@ is separate from the assignment due date in Blackboard.</p>
 <p>Open the <a class="reference external" href="https://console.cloud.google.com/">Google Cloud Console</a>, search for
 <strong>Billing</strong>, and select the course billing account. Open <strong>Credits</strong> and confirm
 that your course credit is available, along with its remaining value and expiration.</p>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../_images/gcp-remaining-credits.jpg"><img alt="Billing Credits page showing an available Cloud Computing credit." src="../_images/gcp-remaining-credits.jpg" style="width: 720px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2 </span><span class="caption-text">This example shows <span class="math notranslate nohighlight">\(100. Your student coupon provides \)</span>50; your remaining balance
-will decrease as credits are used.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">This example shows $100. Your student coupon provides $50; your remaining balance
+will decrease as credits are used.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition important">
@@ -498,46 +503,73 @@ payment details, and billing account numbers from your submission.</p>
 </div>
 </section>
 </section>
-<section id="explore-the-console-and-name-your-project">
-<h2>3. Explore the console and name your project<a class="headerlink" href="#explore-the-console-and-name-your-project" title="Permalink to this heading">#</a></h2>
+<section id="create-or-select-your-course-project">
+<h2>3. Create or select your course project<a class="headerlink" href="#create-or-select-your-course-project" title="Permalink to this heading">#</a></h2>
 <p>Locate the project selector, search bar, Cloud Shell button, and notifications.
 The project selector determines which project’s resources you are viewing.
 Cloud Shell opens a command-line environment for managing Google Cloud. Later,
 you will open an <strong>SSH session on your VM</strong>, which is a different machine.</p>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../_images/gcp-home.jpg"><img alt="Google Cloud home page with the project selector and search bar at the top." src="../_images/gcp-home.jpg" style="width: 760px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Use the top bar to select your project and search for services or settings.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Use the top bar to select your project and search for services or settings.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<section id="create-or-select-a-project">
+<h3>Create or select a project<a class="headerlink" href="#create-or-select-a-project" title="Permalink to this heading">#</a></h3>
+<p>Before linking billing, you need a project to hold your course resources. Do not
+assume that redeeming your education coupon creates one automatically.</p>
+<p>Open the <strong>project selector</strong> at the top of the console. If you already have an
+unused project for this course (for example, <strong>My First Project</strong>), select it and
+continue to <strong>Link your project to billing</strong> below. Otherwise, create one:</p>
+<ol class="arabic simple">
+<li><p>Search for <strong>Manage resources</strong> in the console and open it.</p></li>
+<li><p>Select <strong>Create project</strong>.</p></li>
+<li><p>Enter <code class="docutils literal notranslate"><span class="pre">YourLastName-CloudAppDev</span></code> as the project name, replacing <code class="docutils literal notranslate"><span class="pre">YourLastName</span></code>
+with your last name. Keep the automatically generated <strong>Project ID</strong> and
+record it for your submission.</p></li>
+<li><p>If a billing account field appears, select the education billing account
+containing your course credits.</p></li>
+<li><p>If asked for an organization or location, choose <strong>No organization</strong> when
+available, unless the instructor has specified a location. If your university
+account requires an organization or you lack permission to create a project,
+contact the instructor for help.</p></li>
+<li><p>Select <strong>Create</strong>, wait for completion, then select the new project in the
+project selector.</p></li>
+</ol>
+<p>See Google’s <a class="reference external" href="https://cloud.google.com/resource-manager/docs/creating-managing-projects">project creation guide</a>
+if you need help locating these controls.</p>
+</section>
 <section id="link-your-project-to-billing">
 <h3>Link your project to billing<a class="headerlink" href="#link-your-project-to-billing" title="Permalink to this heading">#</a></h3>
-<p>Select the project created during account setup. If none exists, create one
-through the project selector. Open <strong>Billing</strong> for that project. If it has no
+<p>With your course project selected, open <strong>Billing</strong>. If it has no
 billing account, choose <strong>Link a billing account</strong>, select the education billing
-account containing your credits, and save.</p>
-<figure class="align-center" id="id4">
+account containing your credits, and save. If billing is already linked, verify
+that it is the education account containing your course credits.</p>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../_images/gcp-billing.jpg"><img alt="Dialog for linking a project to Billing Account for Education." src="../_images/gcp-billing.jpg" style="width: 520px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Link your course project to the billing account containing your education credits.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Link your course project to the billing account containing your education credits.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="rename-your-project">
-<h3>Rename your project<a class="headerlink" href="#rename-your-project" title="Permalink to this heading">#</a></h3>
+<section id="verify-or-update-your-project-name">
+<h3>Verify or update your project name<a class="headerlink" href="#verify-or-update-your-project-name" title="Permalink to this heading">#</a></h3>
+<p>If you created the project with the name above, simply verify it here. If you
+reused an existing project, rename it now.</p>
 <p>Search for <strong>Project settings</strong>, or open <strong>IAM &amp; Admin → Settings</strong>. Set the
 project display name to <code class="docutils literal notranslate"><span class="pre">YourLastName-CloudAppDev</span></code>, replacing <code class="docutils literal notranslate"><span class="pre">YourLastName</span></code>
 with your last name, and select <strong>Save</strong>.</p>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../_images/gcp-project-settings.jpg"><img alt="IAM and Admin menu with Settings at the bottom." src="../_images/gcp-project-settings.jpg" style="width: 440px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Open Settings to edit the project display name.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Open Settings to edit the project display name.</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../_images/gcp-project-name.jpg"><img alt="Project name field with a Save button." src="../_images/gcp-project-name.jpg" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Replace the example name with your own last name followed by Cloud Computing.</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Replace the example name with your own last name followed by CloudAppDev.</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Verify the updated name in the project selector. The <strong>project ID</strong> is separate
@@ -558,17 +590,17 @@ remotely. Let’s create a small Ubuntu VM for your web server.</p>
 <h3>Open Compute Engine<a class="headerlink" href="#open-compute-engine" title="Permalink to this heading">#</a></h3>
 <p>Search for <strong>Compute Engine</strong>. If prompted, enable the <strong>Compute Engine API</strong>
 and wait for initialization.</p>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../_images/gcp-cea.jpg"><img alt="Compute Engine API page with the Enable button." src="../_images/gcp-cea.jpg" style="width: 720px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Enable the API if it is not already enabled in your project.</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Enable the API if it is not already enabled in your project.</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Open <strong>VM instances</strong> and select <strong>Create instance</strong>.</p>
-<figure class="align-center" id="id8">
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../_images/gcp-vm.jpg"><img alt="Compute Engine navigation showing VM instances and Create instance." src="../_images/gcp-vm.jpg" style="width: 520px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Create a VM from the VM instances page.</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Create a VM from the VM instances page.</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -618,34 +650,34 @@ numbers, and hyphens in the VM name, with no spaces or angle brackets.</p>
 </table>
 <p>Explore how machine types affect the cost estimate, then return to <strong>e2-micro</strong>
 before creating the VM. Larger machines consume credits more quickly.</p>
-<figure class="align-center" id="id9">
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../_images/gcp-vmi-1.jpg"><img alt="VM creation page showing the name, region, zone, and E2 machine series." src="../_images/gcp-vmi-1.jpg" style="width: 760px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Enter your VM name, select us-east1, and choose the E2 series.</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Enter your VM name, select us-east1, and choose the E2 series.</span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id10">
+<figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="../_images/gcp-vmi-2.jpg"><img alt="Machine configuration with e2-micro and Standard provisioning selected." src="../_images/gcp-vmi-2.jpg" style="width: 660px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Select e2-micro and the Standard provisioning model.</span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">Select e2-micro and the Standard provisioning model.</span><a class="headerlink" href="#id11" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Under <strong>OS and storage</strong>, select <strong>Change</strong> to configure the boot disk.</p>
-<figure class="align-center" id="id11">
+<figure class="align-center" id="id12">
 <a class="reference internal image-reference" href="../_images/gcp-vmi-3.jpg"><img alt="Boot disk dialog showing operating system, version, disk type, and size fields." src="../_images/gcp-vmi-3.jpg" style="width: 550px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 11 </span><span class="caption-text">This screenshot locates the disk settings, but shows Minimal Ubuntu and a balanced
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">This screenshot locates the disk settings, but shows Minimal Ubuntu and a balanced
 disk. For this assignment, choose standard Ubuntu 24.04 LTS and a Standard
-persistent disk, with a size of 30 GB.</span><a class="headerlink" href="#id11" title="Permalink to this image">#</a></p>
+persistent disk, with a size of 30 GB.</span><a class="headerlink" href="#id12" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Under <strong>Networking</strong>, select <strong>Allow HTTP traffic</strong> so your browser can reach
 Apache on TCP port 80.</p>
-<figure class="align-center" id="id12">
+<figure class="align-center" id="id13">
 <a class="reference internal image-reference" href="../_images/gcp-vmi-4.jpg"><img alt="Networking panel showing the Allow HTTP traffic checkbox." src="../_images/gcp-vmi-4.jpg" style="width: 550px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Enable HTTP traffic. HTTPS is also checked in the example, but is not required
-for this lab; opening port 443 does not configure HTTPS on your server.</span><a class="headerlink" href="#id12" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Enable HTTP traffic. HTTPS is also checked in the example, but is not required
+for this lab; opening port 443 does not configure HTTPS on your server.</span><a class="headerlink" href="#id13" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition important">
@@ -659,11 +691,11 @@ and the cost estimate before creating the VM.</p>
 <p>Select <strong>Create</strong> and wait for the VM to show a running status. If the default
 VPC is unavailable or a policy blocks creation, contact the instructor with the
 error message.</p>
-<figure class="align-center" id="id13">
+<figure class="align-center" id="id14">
 <a class="reference internal image-reference" href="../_images/gcp-vmi-5.jpg"><img alt="Running VM in the instance list, with internal IP, external IP, and SSH columns." src="../_images/gcp-vmi-5.jpg" style="width: 760px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Find your running VM and its SSH button. Your name, zone, and IP addresses will
-differ from this example.</span><a class="headerlink" href="#id13" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">Find your running VM and its SSH button. Your name, zone, and IP addresses will
+differ from this example.</span><a class="headerlink" href="#id14" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <ul class="simple">
@@ -685,11 +717,11 @@ between its internal and external IP addresses.</p>
 <h2>5. Connect and install Apache<a class="headerlink" href="#connect-and-install-apache" title="Permalink to this heading">#</a></h2>
 <p>Time to host a website! Click <strong>SSH</strong> next to your VM. If you are new to Linux,
 follow the commands below one at a time.</p>
-<figure class="align-center" id="id14">
+<figure class="align-center" id="id15">
 <a class="reference internal image-reference" href="../_images/gcp-vmi-ssh.jpg"><img alt="SSH-in-browser terminal connected to an Ubuntu VM." src="../_images/gcp-vmi-ssh.jpg" style="width: 660px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 14 </span><span class="caption-text">Run the commands in your VM’s SSH terminal. The example shows a Minimal image;
-your standard Ubuntu welcome message may differ.</span><a class="headerlink" href="#id14" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Run the commands in your VM’s SSH terminal. The example shows a Minimal image;
+your standard Ubuntu welcome message may differ.</span><a class="headerlink" href="#id15" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>The <code class="docutils literal notranslate"><span class="pre">$</span></code> marks the shell prompt; do not type it as part of a command. The toolbar
@@ -734,11 +766,11 @@ not enable UFW, and these rules do not replace the Google Cloud firewall setting
 <h3>Open your web page<a class="headerlink" href="#open-your-web-page" title="Permalink to this heading">#</a></h3>
 <p>In a new browser tab, enter <code class="docutils literal notranslate"><span class="pre">http://EXTERNAL_IP</span></code>, replacing <code class="docutils literal notranslate"><span class="pre">EXTERNAL_IP</span></code> with
 your VM’s current external IP address. You should see Apache’s default page.</p>
-<figure class="align-center" id="id15">
+<figure class="align-center" id="id16">
 <a class="reference internal image-reference" href="../_images/gcp-vmi-apache.jpg"><img alt="Apache2 Ubuntu default page displaying It works in a web browser." src="../_images/gcp-vmi-apache.jpg" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 15 </span><span class="caption-text">A successful HTTP response displays Apache’s default page. Use your VM’s address,
-not the address in the screenshot.</span><a class="headerlink" href="#id15" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">A successful HTTP response displays Apache’s default page. Use your VM’s address,
+not the address in the screenshot.</span><a class="headerlink" href="#id16" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Your web server is now running! This lab uses <strong>HTTP</strong>, not HTTPS; you have not
@@ -773,10 +805,10 @@ account address supplied for this course; ask if you have not received it.</p>
 </ol>
 <p>Owner grants broad control of this project. Apply this course support setup only
 to your course project, and grant access only to the intended instructor.</p>
-<figure class="align-center" id="id16">
+<figure class="align-center" id="id17">
 <a class="reference internal image-reference" href="../_images/gcp-vmi-iam.jpg"><img alt="IAM Grant access dialog with a principal field and the Owner role selected." src="../_images/gcp-vmi-iam.jpg" style="width: 760px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 16 </span><span class="caption-text">Check the selected project, instructor account, and Owner role before saving.</span><a class="headerlink" href="#id16" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 17 </span><span class="caption-text">Check the selected project, instructor account, and Owner role before saving.</span><a class="headerlink" href="#id17" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="tip admonition">
@@ -910,9 +942,10 @@ to monitor consumption. Alerts do not automatically stop resources or cap spendi
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confirm-your-credits">Confirm your credits</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-the-console-and-name-your-project">3. Explore the console and name your project</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-or-select-your-course-project">3. Create or select your course project</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#create-or-select-a-project">Create or select a project</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#link-your-project-to-billing">Link your project to billing</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rename-your-project">Rename your project</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verify-or-update-your-project-name">Verify or update your project name</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-an-ubuntu-virtual-machine">4. Create an Ubuntu virtual machine</a><ul class="nav section-nav flex-column">
