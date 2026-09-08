@@ -1,0 +1,988 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Assignment 1: Google Cloud Setup &#8212; Cloud Computing</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/1';</script>
+    <link rel="shortcut icon" href="https://www.gvsu.edu/cms4/asset/94807988-C47A-2A7B-05628C365AC3C2FA/gvsu_avatar_3[1678817053].jpg"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Resources" href="../resources.html" />
+    <link rel="prev" title="Welcome" href="../syllabus.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../syllabus.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.jpg" class="logo__image only-light" alt="Cloud Computing - Home"/>
+    <script>document.write(`<img src="../_static/logo.jpg" class="logo__image only-dark" alt="Cloud Computing - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../syllabus.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Assignment 1: Google Cloud Setup</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources.html">Resources</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GVSU-CIS437/gvsu-cis437.github.io" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GVSU-CIS437/gvsu-cis437.github.io/issues/new?title=Issue%20on%20page%20%2Fassignments/1.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/assignments/1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Assignment 1: Google Cloud Setup</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#before-you-begin">1. Before you begin</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-you-will-need">What you will need</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-you-will-learn">What you will learn</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-your-account-and-course-credits">2. Set up your account and course credits</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-and-redeem-your-coupon">Request and redeem your coupon</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confirm-your-credits">Confirm your credits</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-the-console-and-name-your-project">3. Explore the console and name your project</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#link-your-project-to-billing">Link your project to billing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rename-your-project">Rename your project</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-an-ubuntu-virtual-machine">4. Create an Ubuntu virtual machine</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-compute-engine">Open Compute Engine</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-the-vm-settings">Choose the VM settings</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connect-and-install-apache">5. Connect and install Apache</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-and-start-apache">Install and start Apache</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#check-the-vm-firewall">Check the VM firewall</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-your-web-page">Open your web page</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-instructor-access">6. Configure instructor access</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submit-your-assignment">7. Submit your assignment</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#after-submitting">After submitting</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="assignment-1-google-cloud-setup">
+<h1>Assignment 1: Google Cloud Setup<a class="headerlink" href="#assignment-1-google-cloud-setup" title="Permalink to this heading">#</a></h1>
+<p><strong>Course:</strong> Cloud Computing<br />
+<strong>Submit:</strong> One document to Assignment 1 in Blackboard. Check Blackboard for the due date.</p>
+<section id="before-you-begin">
+<h2>1. Before you begin<a class="headerlink" href="#before-you-begin" title="Permalink to this heading">#</a></h2>
+<p>In this assignment, you will set up your Google Cloud project, create an Ubuntu
+virtual machine, and use Apache to host your first web page. Read each step
+carefully and save the five checkpoints as you work; these are your submission
+requirements.</p>
+<section id="what-you-will-need">
+<h3>What you will need<a class="headerlink" href="#what-you-will-need" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Your GVSU email address (<code class="docutils literal notranslate"><span class="pre">&#64;mail.gvsu.edu</span></code> or <code class="docutils literal notranslate"><span class="pre">&#64;gvsu.edu</span></code>) to request course credits.</p></li>
+<li><p>A Google account to redeem the coupon, following the instructor’s email instructions.</p></li>
+<li><p>The course coupon request link sent by the instructor.</p></li>
+<li><p>An up-to-date browser and a working internet connection.</p></li>
+</ul>
+</section>
+<section id="what-you-will-learn">
+<h3>What you will learn<a class="headerlink" href="#what-you-will-learn" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>How a Google Cloud project connects to a billing account.</p></li>
+<li><p>How to configure and connect to a small Linux VM.</p></li>
+<li><p>How to install Apache and allow HTTP traffic to a web server.</p></li>
+<li><p>How to grant the instructor access to your course project.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Screenshots illustrate where to find settings. Names, balances, regions, and
+some selections reflect an example account. Use your own information and the
+settings specified in the text. Google changes the console layout frequently;
+use its search bar if a menu has moved.</p>
+</div>
+</section>
+</section>
+<section id="set-up-your-account-and-course-credits">
+<h2>2. Set up your account and course credits<a class="headerlink" href="#set-up-your-account-and-course-credits" title="Permalink to this heading">#</a></h2>
+<section id="request-and-redeem-your-coupon">
+<h3>Request and redeem your coupon<a class="headerlink" href="#request-and-redeem-your-coupon" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Follow the instructor’s email to request your <strong>$50 education-credit coupon</strong>
+using your GVSU email address (<code class="docutils literal notranslate"><span class="pre">&#64;mail.gvsu.edu</span></code> or <code class="docutils literal notranslate"><span class="pre">&#64;gvsu.edu</span></code>).</p></li>
+<li><p>Open the coupon email and follow its redemption instructions. Before redeeming,
+check the signed-in Google account and the account shown on the redemption form.</p></li>
+<li><p>Redeem the coupon and complete the account setup.</p></li>
+</ol>
+<p>Request and redeem the coupon by <strong>December 31, 2026</strong>. The course credits are
+valid through <strong>August 31, 2027</strong>, unless used up earlier. This redemption deadline
+is separate from the assignment due date in Blackboard.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/gcp-credit.jpg"><img alt="Credit redemption form with an arrow connecting the account email and signed-in profile." src="../_images/gcp-credit.jpg" style="width: 650px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Check which account will receive the credits before redeeming your coupon.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="confirm-your-credits">
+<h3>Confirm your credits<a class="headerlink" href="#confirm-your-credits" title="Permalink to this heading">#</a></h3>
+<p>Open the <a class="reference external" href="https://console.cloud.google.com/">Google Cloud Console</a>, search for
+<strong>Billing</strong>, and select the course billing account. Open <strong>Credits</strong> and confirm
+that your course credit is available, along with its remaining value and expiration.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/gcp-remaining-credits.jpg"><img alt="Billing Credits page showing an available Cloud Computing credit." src="../_images/gcp-remaining-credits.jpg" style="width: 720px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">This example shows <span class="math notranslate nohighlight">\(100. Your student coupon provides \)</span>50; your remaining balance
+will decrease as credits are used.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Use the instructor-provided course credits. Do not enter a personal credit card
+or activate a separate paid account for this lab. If credits are missing,
+exhausted, or setup asks for payment information, contact the instructor before
+proceeding. Dismiss a separate free-trial promotion when using course credits.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Checkpoint 1 — Course credits</p>
+<p>Capture the credit status and record its expiration date. Exclude coupon codes,
+payment details, and billing account numbers from your submission.</p>
+</div>
+</section>
+</section>
+<section id="explore-the-console-and-name-your-project">
+<h2>3. Explore the console and name your project<a class="headerlink" href="#explore-the-console-and-name-your-project" title="Permalink to this heading">#</a></h2>
+<p>Locate the project selector, search bar, Cloud Shell button, and notifications.
+The project selector determines which project’s resources you are viewing.
+Cloud Shell opens a command-line environment for managing Google Cloud. Later,
+you will open an <strong>SSH session on your VM</strong>, which is a different machine.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/gcp-home.jpg"><img alt="Google Cloud home page with the project selector and search bar at the top." src="../_images/gcp-home.jpg" style="width: 760px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Use the top bar to select your project and search for services or settings.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="link-your-project-to-billing">
+<h3>Link your project to billing<a class="headerlink" href="#link-your-project-to-billing" title="Permalink to this heading">#</a></h3>
+<p>Select the project created during account setup. If none exists, create one
+through the project selector. Open <strong>Billing</strong> for that project. If it has no
+billing account, choose <strong>Link a billing account</strong>, select the education billing
+account containing your credits, and save.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/gcp-billing.jpg"><img alt="Dialog for linking a project to Billing Account for Education." src="../_images/gcp-billing.jpg" style="width: 520px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">Link your course project to the billing account containing your education credits.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="rename-your-project">
+<h3>Rename your project<a class="headerlink" href="#rename-your-project" title="Permalink to this heading">#</a></h3>
+<p>Search for <strong>Project settings</strong>, or open <strong>IAM &amp; Admin → Settings</strong>. Set the
+project display name to <code class="docutils literal notranslate"><span class="pre">YourLastName-CloudAppDev</span></code>, replacing <code class="docutils literal notranslate"><span class="pre">YourLastName</span></code>
+with your last name, and select <strong>Save</strong>.</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../_images/gcp-project-settings.jpg"><img alt="IAM and Admin menu with Settings at the bottom." src="../_images/gcp-project-settings.jpg" style="width: 440px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">Open Settings to edit the project display name.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../_images/gcp-project-name.jpg"><img alt="Project name field with a Save button." src="../_images/gcp-project-name.jpg" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Replace the example name with your own last name followed by Cloud Computing.</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Verify the updated name in the project selector. The <strong>project ID</strong> is separate
+from the display name; renaming the project does not change its ID. Confirm once
+more that the selected project uses your course billing account.</p>
+<div class="tip admonition">
+<p class="admonition-title">Checkpoint 2 — Project setup</p>
+<p>Capture the project settings showing its display name and project ID. In one
+sentence, explain how a project relates to a billing account.</p>
+</div>
+</section>
+</section>
+<section id="create-an-ubuntu-virtual-machine">
+<h2>4. Create an Ubuntu virtual machine<a class="headerlink" href="#create-an-ubuntu-virtual-machine" title="Permalink to this heading">#</a></h2>
+<p>A virtual machine (VM) is a computer running in the cloud that you can access
+remotely. Let’s create a small Ubuntu VM for your web server.</p>
+<section id="open-compute-engine">
+<h3>Open Compute Engine<a class="headerlink" href="#open-compute-engine" title="Permalink to this heading">#</a></h3>
+<p>Search for <strong>Compute Engine</strong>. If prompted, enable the <strong>Compute Engine API</strong>
+and wait for initialization.</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../_images/gcp-cea.jpg"><img alt="Compute Engine API page with the Enable button." src="../_images/gcp-cea.jpg" style="width: 720px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Enable the API if it is not already enabled in your project.</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Open <strong>VM instances</strong> and select <strong>Create instance</strong>.</p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../_images/gcp-vm.jpg"><img alt="Compute Engine navigation showing VM instances and Create instance." src="../_images/gcp-vm.jpg" style="width: 520px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Create a VM from the VM instances page.</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="choose-the-vm-settings">
+<h3>Choose the VM settings<a class="headerlink" href="#choose-the-vm-settings" title="Permalink to this heading">#</a></h3>
+<p>Use the following settings. Replace <code class="docutils literal notranslate"><span class="pre">yourlastname</span></code> with your last name in
+lowercase; for example, <code class="docutils literal notranslate"><span class="pre">zhuang-cc-microinstance-1</span></code>. Use lowercase letters,
+numbers, and hyphens in the VM name, with no spaces or angle brackets.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Setting</p></th>
+<th class="head"><p>Choose</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Name</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">yourlastname-cc-microinstance-1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Region</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">us-east1</span></code> (South Carolina)</p></td>
+</tr>
+<tr class="row-even"><td><p>Zone</p></td>
+<td><p>Any available zone in <code class="docutils literal notranslate"><span class="pre">us-east1</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Machine series</p></td>
+<td><p>General purpose → E2</p></td>
+</tr>
+<tr class="row-even"><td><p>Machine type</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">e2-micro</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Provisioning model</p></td>
+<td><p>Standard</p></td>
+</tr>
+<tr class="row-even"><td><p>Operating system</p></td>
+<td><p>Ubuntu 24.04 LTS, x86/64; standard image, not Minimal or Pro</p></td>
+</tr>
+<tr class="row-odd"><td><p>Boot disk type and size</p></td>
+<td><p>Standard persistent disk (<code class="docutils literal notranslate"><span class="pre">pd-standard</span></code>), 30 GB</p></td>
+</tr>
+<tr class="row-even"><td><p>Networking</p></td>
+<td><p>Default VPC with an ephemeral external IPv4 address</p></td>
+</tr>
+<tr class="row-odd"><td><p>Firewall</p></td>
+<td><p>Allow HTTP traffic</p></td>
+</tr>
+</tbody>
+</table>
+<p>Explore how machine types affect the cost estimate, then return to <strong>e2-micro</strong>
+before creating the VM. Larger machines consume credits more quickly.</p>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="../_images/gcp-vmi-1.jpg"><img alt="VM creation page showing the name, region, zone, and E2 machine series." src="../_images/gcp-vmi-1.jpg" style="width: 760px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Enter your VM name, select us-east1, and choose the E2 series.</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="../_images/gcp-vmi-2.jpg"><img alt="Machine configuration with e2-micro and Standard provisioning selected." src="../_images/gcp-vmi-2.jpg" style="width: 660px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Select e2-micro and the Standard provisioning model.</span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Under <strong>OS and storage</strong>, select <strong>Change</strong> to configure the boot disk.</p>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="../_images/gcp-vmi-3.jpg"><img alt="Boot disk dialog showing operating system, version, disk type, and size fields." src="../_images/gcp-vmi-3.jpg" style="width: 550px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">This screenshot locates the disk settings, but shows Minimal Ubuntu and a balanced
+disk. For this assignment, choose standard Ubuntu 24.04 LTS and a Standard
+persistent disk, with a size of 30 GB.</span><a class="headerlink" href="#id11" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Under <strong>Networking</strong>, select <strong>Allow HTTP traffic</strong> so your browser can reach
+Apache on TCP port 80.</p>
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="../_images/gcp-vmi-4.jpg"><img alt="Networking panel showing the Allow HTTP traffic checkbox." src="../_images/gcp-vmi-4.jpg" style="width: 550px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Enable HTTP traffic. HTTPS is also checked in the example, but is not required
+for this lab; opening port 443 does not configure HTTPS on your server.</span><a class="headerlink" href="#id12" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Free Tier usage has limits. An eligible e2-micro VM and standard persistent disk
+can qualify, but additional resources and usage can consume course credits.
+Do not assume the whole setup can run indefinitely at no cost. Review the
+<a class="reference external" href="https://cloud.google.com/free/docs/free-cloud-features">current Free Tier limits</a>
+and the cost estimate before creating the VM.</p>
+</div>
+<p>Select <strong>Create</strong> and wait for the VM to show a running status. If the default
+VPC is unavailable or a policy blocks creation, contact the instructor with the
+error message.</p>
+<figure class="align-center" id="id13">
+<a class="reference internal image-reference" href="../_images/gcp-vmi-5.jpg"><img alt="Running VM in the instance list, with internal IP, external IP, and SSH columns." src="../_images/gcp-vmi-5.jpg" style="width: 760px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Find your running VM and its SSH button. Your name, zone, and IP addresses will
+differ from this example.</span><a class="headerlink" href="#id13" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>Green status indicator:</strong> The VM is running.</p></li>
+<li><p><strong>Internal IP:</strong> Used to communicate within the cloud network.</p></li>
+<li><p><strong>External IP:</strong> Used to reach your web server from the internet. An ephemeral
+address can change after stopping and restarting the VM.</p></li>
+<li><p><strong>SSH:</strong> Opens a browser-based terminal connected to the VM.</p></li>
+</ul>
+<div class="tip admonition">
+<p class="admonition-title">Checkpoint 3 — Virtual machine</p>
+<p>Capture the VM name, region/zone, machine type, boot disk configuration, and
+running status. Use more than one screenshot if needed. Explain the difference
+between its internal and external IP addresses.</p>
+</div>
+</section>
+</section>
+<section id="connect-and-install-apache">
+<h2>5. Connect and install Apache<a class="headerlink" href="#connect-and-install-apache" title="Permalink to this heading">#</a></h2>
+<p>Time to host a website! Click <strong>SSH</strong> next to your VM. If you are new to Linux,
+follow the commands below one at a time.</p>
+<figure class="align-center" id="id14">
+<a class="reference internal image-reference" href="../_images/gcp-vmi-ssh.jpg"><img alt="SSH-in-browser terminal connected to an Ubuntu VM." src="../_images/gcp-vmi-ssh.jpg" style="width: 660px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">Run the commands in your VM’s SSH terminal. The example shows a Minimal image;
+your standard Ubuntu welcome message may differ.</span><a class="headerlink" href="#id14" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The <code class="docutils literal notranslate"><span class="pre">$</span></code> marks the shell prompt; do not type it as part of a command. The toolbar
+includes settings and file-transfer controls.</p>
+<section id="install-and-start-apache">
+<h3>Install and start Apache<a class="headerlink" href="#install-and-start-apache" title="Permalink to this heading">#</a></h3>
+<p>Refresh the package list, then install Apache. Confirm installation if prompted.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>apache2
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">sudo</span></code> runs a command with administrator privileges.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">apt</span></code> manages software packages; <code class="docutils literal notranslate"><span class="pre">update</span></code> refreshes the package list.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">install</span> <span class="pre">apache2</span></code> installs Apache and its dependencies.</p></li>
+</ul>
+<p>Start Apache and enable it to run automatically when the VM boots:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>apache2
+systemctl<span class="w"> </span>is-active<span class="w"> </span>apache2
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">systemctl</span></code> manages services. The final command should print <strong><code class="docutils literal notranslate"><span class="pre">active</span></code></strong>.</p>
+</section>
+<section id="check-the-vm-firewall">
+<h3>Check the VM firewall<a class="headerlink" href="#check-the-vm-firewall" title="Permalink to this heading">#</a></h3>
+<p>Google Cloud’s VPC firewall and Ubuntu’s firewall are separate. The <strong>Allow HTTP
+traffic</strong> setting from Step 4 permits HTTP through the cloud firewall.</p>
+<p>If UFW is not installed, install it, then check its status:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>ufw
+sudo<span class="w"> </span>ufw<span class="w"> </span>status
+</pre></div>
+</div>
+<p>If UFW is <strong>active</strong>, allow SSH and HTTP:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">22</span>/tcp
+sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">80</span>/tcp
+</pre></div>
+</div>
+<p>If it is <strong>inactive</strong>, leave it inactive for this lab. Adding UFW rules alone does
+not enable UFW, and these rules do not replace the Google Cloud firewall setting.</p>
+</section>
+<section id="open-your-web-page">
+<h3>Open your web page<a class="headerlink" href="#open-your-web-page" title="Permalink to this heading">#</a></h3>
+<p>In a new browser tab, enter <code class="docutils literal notranslate"><span class="pre">http://EXTERNAL_IP</span></code>, replacing <code class="docutils literal notranslate"><span class="pre">EXTERNAL_IP</span></code> with
+your VM’s current external IP address. You should see Apache’s default page.</p>
+<figure class="align-center" id="id15">
+<a class="reference internal image-reference" href="../_images/gcp-vmi-apache.jpg"><img alt="Apache2 Ubuntu default page displaying It works in a web browser." src="../_images/gcp-vmi-apache.jpg" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">A successful HTTP response displays Apache’s default page. Use your VM’s address,
+not the address in the screenshot.</span><a class="headerlink" href="#id15" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Your web server is now running! This lab uses <strong>HTTP</strong>, not HTTPS; you have not
+configured a TLS certificate.</p>
+<p>If the page does not load, check that:</p>
+<ol class="arabic simple">
+<li><p>The VM is running and the URL uses its current external IP.</p></li>
+<li><p>The URL starts with <code class="docutils literal notranslate"><span class="pre">http://</span></code>, and the browser has not changed it to HTTPS.</p></li>
+<li><p>Apache reports <code class="docutils literal notranslate"><span class="pre">active</span></code>.</p></li>
+<li><p><strong>Allow HTTP traffic</strong> is selected for the VM and TCP port 80 is allowed by
+its VPC firewall rule.</p></li>
+<li><p>UFW allows TCP port 80 if UFW is active.</p></li>
+</ol>
+<p>For more detail, see Google’s <a class="reference external" href="https://cloud.google.com/compute/docs/tutorials/basic-webserver-apache">Apache web server guide</a>.</p>
+<div class="tip admonition">
+<p class="admonition-title">Checkpoint 4 — Web server</p>
+<p>Capture the Apache default page with its HTTP address visible and the terminal
+output showing that Apache is active.</p>
+</div>
+</section>
+</section>
+<section id="configure-instructor-access">
+<h2>6. Configure instructor access<a class="headerlink" href="#configure-instructor-access" title="Permalink to this heading">#</a></h2>
+<p>Grant the instructor access to <strong>your course project</strong> so they can inspect its
+configuration and help troubleshoot problems. Use the instructor’s Google
+account address supplied for this course; ask if you have not received it.</p>
+<ol class="arabic simple">
+<li><p>Select your Cloud Computing project and open <strong>IAM &amp; Admin → IAM</strong>.</p></li>
+<li><p>Select <strong>Grant access</strong> and enter the instructor’s Google account address.</p></li>
+<li><p>Select <strong>Owner</strong> under the basic project roles, then select <strong>Save</strong>.</p></li>
+<li><p>Verify that the instructor appears with the Owner role.</p></li>
+</ol>
+<p>Owner grants broad control of this project. Apply this course support setup only
+to your course project, and grant access only to the intended instructor.</p>
+<figure class="align-center" id="id16">
+<a class="reference internal image-reference" href="../_images/gcp-vmi-iam.jpg"><img alt="IAM Grant access dialog with a principal field and the Owner role selected." src="../_images/gcp-vmi-iam.jpg" style="width: 760px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">Check the selected project, instructor account, and Owner role before saving.</span><a class="headerlink" href="#id16" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="tip admonition">
+<p class="admonition-title">Checkpoint 5 — Instructor access</p>
+<p>Capture the course project’s IAM entry showing the instructor and assigned role.
+Explain why project access should only be given to intended collaborators.</p>
+</div>
+</section>
+<section id="submit-your-assignment">
+<h2>7. Submit your assignment<a class="headerlink" href="#submit-your-assignment" title="Permalink to this heading">#</a></h2>
+<p>Congratulations—you have configured a cloud project and deployed a web server!
+Submit <strong>one document</strong> to the <strong>Assignment 1</strong> entry in Blackboard. Organize it
+using the following checklist:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Item</p></th>
+<th class="head"><p>Include</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Identification</p></td>
+<td><p>Your name and project display name</p></td>
+</tr>
+<tr class="row-odd"><td><p>Checkpoint 1</p></td>
+<td><p>Credit status screenshot and expiration date</p></td>
+</tr>
+<tr class="row-even"><td><p>Checkpoint 2</p></td>
+<td><p>Project settings screenshot and billing explanation</p></td>
+</tr>
+<tr class="row-odd"><td><p>Checkpoint 3</p></td>
+<td><p>VM configuration screenshots and IP address explanation</p></td>
+</tr>
+<tr class="row-even"><td><p>Checkpoint 4</p></td>
+<td><p>Apache page screenshot, HTTP URL, and active service output</p></td>
+</tr>
+<tr class="row-odd"><td><p>Checkpoint 5</p></td>
+<td><p>Instructor IAM entry screenshot and access explanation</p></td>
+</tr>
+<tr class="row-even"><td><p>Reflection</p></td>
+<td><p>An issue you encountered and how you resolved it; if none, say so</p></td>
+</tr>
+</tbody>
+</table>
+<p>Make screenshots readable and label each checkpoint. Keep coupon codes,
+passwords, and payment details out of your submission. Check Blackboard for the
+deadline and any additional instructor directions.</p>
+<section id="after-submitting">
+<h3>After submitting<a class="headerlink" href="#after-submitting" title="Permalink to this heading">#</a></h3>
+<p>Review your remaining credits and costs. Follow the instructor’s directions
+about keeping the VM running for grading and later labs. When it is no longer
+needed, stop it; disks and other retained resources can still incur charges.
+Remove resources only after the instructor confirms they are no longer required.</p>
+<p>Optional: configure <a class="reference external" href="https://cloud.google.com/billing/docs/how-to/budgets">billing budget alerts</a>
+to monitor consumption. Alerts do not automatically stop resources or cap spending.</p>
+<p>For further exploration, visit the <a class="reference internal" href="../resources.html"><span class="doc std std-doc">Resources page</span></a> or browse
+<a class="reference external" href="https://cloud.google.com/products">Google Cloud products</a>.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./assignments"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../syllabus.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../resources.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Resources</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#before-you-begin">1. Before you begin</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-you-will-need">What you will need</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-you-will-learn">What you will learn</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-up-your-account-and-course-credits">2. Set up your account and course credits</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-and-redeem-your-coupon">Request and redeem your coupon</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#confirm-your-credits">Confirm your credits</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-the-console-and-name-your-project">3. Explore the console and name your project</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#link-your-project-to-billing">Link your project to billing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rename-your-project">Rename your project</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-an-ubuntu-virtual-machine">4. Create an Ubuntu virtual machine</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-compute-engine">Open Compute Engine</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#choose-the-vm-settings">Choose the VM settings</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connect-and-install-apache">5. Connect and install Apache</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#install-and-start-apache">Install and start Apache</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#check-the-vm-firewall">Check the VM firewall</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#open-your-web-page">Open your web page</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-instructor-access">6. Configure instructor access</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submit-your-assignment">7. Submit your assignment</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#after-submitting">After submitting</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr. Yong Zhuang
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2026.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
