@@ -32,7 +32,7 @@ The following schedule is tentative and may be adjusted during the semester.
 | --- | --- | --- |
 | 1 (8/31) | [Introduction](assets/pdf/Introduction.pdf) | [What is cloud computing?](assets/pdf/What%20is%20cloud%20computing_.pdf) |
 | 2 (9/7) | [Set up](assets/pdf/Setup.pdf), [Assignment 1: Google Cloud Setup](assignments/1.md) | [Cloud Platforms](assets/pdf/Cloud-Platforms.pdf) |
-| 3 (9/14) | ... | ... |
+| 3 (9/14) | [Cloud Shell 1](assets/pdf/Cloud-Shell-1.pdf) | ... |
 | 4 (9/21) | ... | ... |
 | 5 (9/28) | ... | ... |
 | 6 (10/5) | ... | ... |
