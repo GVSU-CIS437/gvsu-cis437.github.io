@@ -1,0 +1,32 @@
+version: 1
+project:
+  title: Cloud Computing
+  authors:
+    - name: Dr. Yong Zhuang
+  copyright: '2026'  
+  github: null
+    # Add the new Jupyter launch functionality
+  # jupyter: true
+
+  # Hide GitHub/source and edit icons
+  source_url: null
+  edit_url: null
+  downloads: []
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/book.pdf
+  toc:
+    - file: syllabus.md
+    - title: Assignments
+      children:
+        - file: assignments/1.md
+    - title: Resources
+      children:
+        - file: resources.md
+site:
+  options:
+    logo: assets/img/logo.jpg
+    favicon: assets/img/logo.jpg
+    folders: true
+  template: book-theme

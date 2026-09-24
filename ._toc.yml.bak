@@ -1,0 +1,9 @@
+format: jb-book
+root: syllabus
+parts:
+  - caption: Assignments
+    chapters:
+      - file: assignments/1
+  - caption: Resources
+    chapters:
+      - file: resources
