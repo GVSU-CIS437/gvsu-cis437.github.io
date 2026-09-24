@@ -1,6 +1,6 @@
-# Welcome
+# CIS 437 Cloud Computing
 
-to Cloud Computing! This hands-on course introduces the foundations of cloud computing and examines how cloud technologies support the development, deployment, and management of modern software systems. We will study cloud platforms, Infrastructure-as-a-Service, Platform-as-a-Service, Software-as-a-Service, virtualization, microservices, serverless computing, security, geographic distribution, APIs, data processing, Cloud Run, Cloud Build, cloud operations, and applications of machine learning and generative AI. Through coursework and a term project using Google Cloud, you will gain practical experience developing cloud applications and evaluating the benefits, limitations, and real-world challenges of cloud computing.
+Welcome to Cloud Computing! This hands-on course introduces the foundations of cloud computing and examines how cloud technologies support the development, deployment, and management of modern software systems. We will study cloud platforms, Infrastructure-as-a-Service, Platform-as-a-Service, Software-as-a-Service, virtualization, microservices, serverless computing, security, geographic distribution, APIs, data processing, Cloud Run, Cloud Build, cloud operations, and applications of machine learning and generative AI. Through coursework and a term project using Google Cloud, you will gain practical experience developing cloud applications and evaluating the benefits, limitations, and real-world challenges of cloud computing.
 
 ## Course Information
 
