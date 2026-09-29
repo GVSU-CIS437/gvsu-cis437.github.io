@@ -20,3 +20,12 @@ assignment requirements and submission instructions are on the assignment pages.
 
 - [Using Cloud Shell](https://cloud.google.com/shell/docs/using-cloud-shell): explore the browser-based terminal for managing Google Cloud. It is separate from an SSH session on your VM.
 - [Identity and Access Management overview](https://cloud.google.com/iam/docs/overview): understand principals, roles, and permissions before granting project access.
+
+## Codelabs
+
+- [Getting Started with Cloud Shell & gcloud](https://codelabs.developers.google.com/codelabs/cloud-shell?utm_source=chatgpt.com)
+- [Google Compute Engine Codelab](https://codelabs.developers.google.com/codelabs/cloud-compute-engine?utm_source=chatgpt.com)
+- [Getting Started with App Engine (Python 3)](https://codelabs.developers.google.com/codelabs/cloud-app-engine-python3?utm_source=chatgpt.com)
+- [Host and Scale a Web App on Compute Engine](https://codelabs.developers.google.com/codelabs/cloud-webapp-hosting-gce?utm_source=chatgpt.com)
+<!-- - [Cloud Computing Fundamentals Quiz](https://www.cloudskillsboost.google/course_templates/153/quizzes/515732?locale=en&utm_source=chatgpt.com)
+- [Load Balancing and Autoscaling Quiz](https://www.cloudskillsboost.google/course_templates/178/quizzes/470312?utm_source=chatgpt.com) -->

@@ -21,6 +21,7 @@ project:
     - title: Assignments
       children:
         - file: assignments/1.md
+        - file: assignments/2.md
     - title: Resources
       children:
         - file: resources.md
