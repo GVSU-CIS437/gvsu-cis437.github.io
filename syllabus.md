@@ -35,7 +35,7 @@ The following schedule is tentative and may be adjusted during the semester.
 | 3 (9/14) | [Cloud Shell 1](assets/pdf/Cloud-Shell-1.pdf) | [Cloud Shell 2](assets/pdf/Cloud%20Shell-2.pdf) |
 | 4 (9/21) | [Designing-Cloud-Applications](assets/pdf/Designing-Cloud-Applications.pdf) | [Choosing Cloud Services](assets/pdf/Choosing-Cloud-Services.pdf) |
 | 5 (9/28) | [Quiz 1](https://lms.gvsu.edu/) | [Cloud Networking Fundamentals](assets/pdf/Cloud-Networking-Fundamentals.pdf) |
-| 6 (10/5) | [Connecting Cloud Networks](assets/pdf/6-1-Connecting-Cloud-Networks.pdf) | ... |
+| 6 (10/5) | [Connecting Cloud Networks](assets/pdf/6-1-Connecting-Cloud-Networks.pdf) | [Cloud Load Balancing](assets/pdf/6-2-Cloud-Load-Balancing.pdf) |
 | 7 (10/12) | ... | **Midterm Exam** |
 | 8 (10/19) | ... | ... |
 | 9 (10/26) | **Fall Break No Class** | ... |
