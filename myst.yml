@@ -17,11 +17,14 @@ project:
       template: plain_latex_book
       output: exports/book.pdf
   toc:
-    - file: syllabus.md
+    - file: syllabus.md    
     - title: Assignments
       children:
         - file: assignments/1.md
         - file: assignments/2.md
+    - title: Exams
+      children:
+        - file: exams/midterm-study-guide.md
     - title: Resources
       children:
         - file: resources.md
