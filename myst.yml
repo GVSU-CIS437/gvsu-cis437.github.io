@@ -25,6 +25,9 @@ project:
     - title: Exams
       children:
         - file: exams/midterm-study-guide.md
+    - title: Project
+      children:
+        - file: project/term-project.md
     - title: Resources
       children:
         - file: resources.md
