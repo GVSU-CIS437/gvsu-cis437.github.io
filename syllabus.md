@@ -30,14 +30,14 @@ The following schedule is tentative and may be adjusted during the semester.
 
 | Week | Tuesday | Thursday |
 | --- | --- | --- |
-| 1 (8/31) | [Introduction](assets/pdf/Introduction.pdf) | [What is cloud computing?](assets/pdf/What%20is%20cloud%20computing_.pdf) |
-| 2 (9/7) | [Set up](assets/pdf/Setup.pdf), [Assignment 1: Google Cloud Setup](assignments/1.md) | [Cloud Platforms](assets/pdf/Cloud-Platforms.pdf) |
-| 3 (9/14) | [Cloud Shell 1](assets/pdf/Cloud-Shell-1.pdf) | [Cloud Shell 2](assets/pdf/Cloud%20Shell-2.pdf) |
-| 4 (9/21) | [Designing-Cloud-Applications](assets/pdf/Designing-Cloud-Applications.pdf) | [Choosing Cloud Services](assets/pdf/Choosing-Cloud-Services.pdf) |
-| 5 (9/28) | [Quiz 1](https://lms.gvsu.edu/) | [Cloud Networking Fundamentals](assets/pdf/Cloud-Networking-Fundamentals.pdf) |
-| 6 (10/5) | [Connecting Cloud Networks](assets/pdf/6-1-Connecting-Cloud-Networks.pdf) | [Cloud Load Balancing](assets/pdf/6-2-Cloud-Load-Balancing.pdf) |
+| 1 (8/31) | [Introduction](assets/pdf/Introduction.pdf) | [🎬](https://youtu.be/EERiyx6NW04), [What is cloud computing?](assets/pdf/What%20is%20cloud%20computing_.pdf) |
+| 2 (9/7) | [🎬](https://youtu.be/7uDWs3PpTCc), [Set up](assets/pdf/Setup.pdf), [Assignment 1: Google Cloud Setup](assignments/1.md) | [🎬](https://youtu.be/0X2TVbRgW9w), [Cloud Platforms](assets/pdf/Cloud-Platforms.pdf) |
+| 3 (9/14) | [🎬](https://youtu.be/-zfLALMOAKI), [Cloud Shell 1](assets/pdf/Cloud-Shell-1.pdf) | [🎬](https://youtu.be/cTTvYIfmQuE), [Cloud Shell 2](assets/pdf/Cloud%20Shell-2.pdf) |
+| 4 (9/21) | [🎬](https://youtu.be/nYdEUiysAis), [Designing-Cloud-Applications](assets/pdf/Designing-Cloud-Applications.pdf) | [🎬](https://youtu.be/rJr_JYp0xgI), [Choosing Cloud Services](assets/pdf/Choosing-Cloud-Services.pdf) |
+| 5 (9/28) | [Quiz 1](https://lms.gvsu.edu/) | [🎬](https://youtu.be/fF6odSsODZ0), [Cloud Networking Fundamentals](assets/pdf/Cloud-Networking-Fundamentals.pdf) |
+| 6 (10/5) | [🎬](https://youtu.be/Coi1EulQhBk), [Connecting Cloud Networks](assets/pdf/6-1-Connecting-Cloud-Networks.pdf) | [Cloud Load Balancing](assets/pdf/6-2-Cloud-Load-Balancing.pdf) |
 | 7 (10/12) | [Midterm- Study Guide](exams/midterm-study-guide.md) | **Midterm Exam** |
-| 8 (10/19) | [Cloud Design Patterns 1](assets/pdf/7-1-Cloud-Design-Patterns-1.pdf) | Cloud Design Patterns 2 |
+| 8 (10/19) | [🎬](https://youtu.be/MhSwnH4pnCQ), [Cloud Design Patterns 1](assets/pdf/7-1-Cloud-Design-Patterns-1.pdf) | Cloud Design Patterns 2 |
 | 9 (10/26) | **Fall Break No Class** | ... |
 | 10 (11/2) | ... | ... |
 | 11 (11/9) | ... | ... |
