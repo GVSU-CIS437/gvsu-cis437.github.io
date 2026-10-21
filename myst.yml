@@ -22,6 +22,7 @@ project:
       children:
         - file: assignments/1.md
         - file: assignments/2.md
+        - file: assignments/3.md
     - title: Exams
       children:
         - file: exams/midterm-study-guide.md
