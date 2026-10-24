@@ -37,7 +37,7 @@ The following schedule is tentative and may be adjusted during the semester.
 | 5 (9/28) | [Quiz 1](https://lms.gvsu.edu/) | [🎬](https://youtu.be/fF6odSsODZ0), [Networking Fundamentals](assets/pdf/Cloud-Networking-Fundamentals.pdf) |
 | 6 (10/5) | [🎬](https://youtu.be/Coi1EulQhBk), [Connecting Cloud Networks](assets/pdf/6-1-Connecting-Cloud-Networks.pdf) | [Cloud Load Balancing](assets/pdf/6-2-Cloud-Load-Balancing.pdf) |
 | 7 (10/12) | [Midterm- Study Guide](exams/midterm-study-guide.md) | **Midterm Exam** |
-| 8 (10/19) | [🎬](https://youtu.be/MhSwnH4pnCQ), [Design Patterns 1](assets/pdf/7-1-Cloud-Design-Patterns-1.pdf), [Assignment 3](assignments/3.md) | [Design Patterns 2](assets/pdf/7-2-Cloud-Design-Patterns-2.pdf) |
+| 8 (10/19) | [🎬](https://youtu.be/MhSwnH4pnCQ), [Design Patterns 1](assets/pdf/7-1-Cloud-Design-Patterns-1.pdf), [Assignment 3](assignments/3.md) | [🎬](https://youtu.be/H5NBM5YeMmE), [Design Patterns 2](assets/pdf/7-2-Cloud-Design-Patterns-2.pdf) |
 | 9 (10/26) | **Fall Break No Class** | Microservices |
 | 10 (11/2) | Serverless Functions |  Geographic Issues |
 | 11 (11/9) | Cloud Security 1 | Cloud Security 2 |
