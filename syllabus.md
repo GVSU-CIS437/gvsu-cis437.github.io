@@ -39,7 +39,7 @@ The following schedule is tentative and may be adjusted during the semester.
 | 7 (10/12) | [Midterm- Study Guide](exams/midterm-study-guide.md) | **Midterm Exam** |
 | 8 (10/19) | [🎬](https://youtu.be/MhSwnH4pnCQ), [Design Patterns 1](assets/pdf/8-1-Cloud-Design-Patterns-1.pdf), [Assignment 3](assignments/3.md) | [🎬](https://youtu.be/H5NBM5YeMmE), [Design Patterns 2](assets/pdf/8-2-Cloud-Design-Patterns-2.pdf) |
 | 9 (10/26) | **Fall Break No Class** | [🎬](https://youtu.be/Bgqtt4isZLY), [Microservices](assets/pdf/9-2-Microservices.pdf) |
-| 10 (11/2) | [🎬](https://youtu.be/Q-QlhEISA50), [Serverless Functions](assets/pdf/10-1-Microservices.pdf) |  Geographic Issues |
+| 10 (11/2) | [🎬](https://youtu.be/Q-QlhEISA50), [Serverless Functions](assets/pdf/10-1-Microservices.pdf) |  [Geographic Issues](assets/pdf/10-2-Geographic-Issues.pdf) |
 | 11 (11/9) | Cloud Security 1 | Cloud Security 2 |
 | 12 (11/16) | Normal and Big Data 1 | Normal and Big Data 2 |
 | 13 (11/23) | Normal and Big Data 3 | **Thanksgiving Recess – No Class** |
