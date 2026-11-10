@@ -28,21 +28,21 @@ Welcome to Cloud Computing! This hands-on course introduces the foundations of c
 
 The following schedule is tentative and may be adjusted during the semester.
 
-| Week | Tuesday | Thursday |
-| --- | --- | --- |
-| 1 (8/31) | [Introduction](assets/pdf/Introduction.pdf) | [🎬](https://youtu.be/EERiyx6NW04), [What is cloud computing?](assets/pdf/What%20is%20cloud%20computing_.pdf) |
-| 2 (9/7) | [🎬](https://youtu.be/7uDWs3PpTCc), [Set up](assets/pdf/Setup.pdf), [Assignment 1](assignments/1.md) | [🎬](https://youtu.be/0X2TVbRgW9w), [Cloud Platforms](assets/pdf/Cloud-Platforms.pdf) |
-| 3 (9/14) | [🎬](https://youtu.be/-zfLALMOAKI), [Cloud Shell 1](assets/pdf/Cloud-Shell-1.pdf) | [🎬](https://youtu.be/cTTvYIfmQuE), [Cloud Shell 2](assets/pdf/Cloud%20Shell-2.pdf) |
-| 4 (9/21) | [🎬](https://youtu.be/nYdEUiysAis), [Designing-Cloud-Applications](assets/pdf/Designing-Cloud-Applications.pdf) | [🎬](https://youtu.be/rJr_JYp0xgI), [Cloud Services](assets/pdf/Choosing-Cloud-Services.pdf), [Assignment 2](assignments/2.md) |
-| 5 (9/28) | [Quiz 1](https://lms.gvsu.edu/) | [🎬](https://youtu.be/fF6odSsODZ0), [Networking Fundamentals](assets/pdf/Cloud-Networking-Fundamentals.pdf) |
-| 6 (10/5) | [🎬](https://youtu.be/Coi1EulQhBk), [Connecting Cloud Networks](assets/pdf/6-1-Connecting-Cloud-Networks.pdf) | [🎬](https://youtu.be/9CINREzwS3M), [Cloud Load Balancing](assets/pdf/6-2-Cloud-Load-Balancing.pdf) |
-| 7 (10/12) | [Midterm- Study Guide](exams/midterm-study-guide.md) | **Midterm Exam** |
-| 8 (10/19) | [🎬](https://youtu.be/MhSwnH4pnCQ), [Design Patterns 1](assets/pdf/8-1-Cloud-Design-Patterns-1.pdf), [Assignment 3](assignments/3.md) | [🎬](https://youtu.be/H5NBM5YeMmE), [Design Patterns 2](assets/pdf/8-2-Cloud-Design-Patterns-2.pdf) |
-| 9 (10/26) | **Fall Break No Class** | [🎬](https://youtu.be/Bgqtt4isZLY), [Microservices](assets/pdf/9-2-Microservices.pdf) |
-| 10 (11/2) | [🎬](https://youtu.be/Q-QlhEISA50), [Serverless Functions](assets/pdf/10-1-Microservices.pdf) |  [🎬](https://youtu.be/k2Xdbhfb_-Y), [Geographic Issues](assets/pdf/10-2-Geographic-Issues.pdf) |
-| 11 (11/9) | Cloud Security 1 | Cloud Security 2 |
-| 12 (11/16) | Normal and Big Data 1 | Normal and Big Data 2 |
-| 13 (11/23) | Normal and Big Data 3 | **Thanksgiving Recess – No Class** |
-| 14 (11/30) | APIs | Cloud Run and Cloud Build |
-| 15 (12/7) | Operations | Final Presentation |
-| 16(12/14) | **No Regular Class** | **Final Exam** |
+| Week       | Tuesday                                                                                                                              | Thursday                                                                                                                      |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| 1 (8/31)   | [Introduction](assets/pdf/Introduction.pdf)                                                                                          | [🎬](https://youtu.be/EERiyx6NW04), [What is cloud computing?](assets/pdf/What%20is%20cloud%20computing_.pdf)                  |
+| 2 (9/7)    | [🎬](https://youtu.be/7uDWs3PpTCc), [Set up](assets/pdf/Setup.pdf), [Assignment 1](assignments/1.md)                                  | [🎬](https://youtu.be/0X2TVbRgW9w), [Cloud Platforms](assets/pdf/Cloud-Platforms.pdf)                                          |
+| 3 (9/14)   | [🎬](https://youtu.be/-zfLALMOAKI), [Cloud Shell 1](assets/pdf/Cloud-Shell-1.pdf)                                                     | [🎬](https://youtu.be/cTTvYIfmQuE), [Cloud Shell 2](assets/pdf/Cloud%20Shell-2.pdf)                                            |
+| 4 (9/21)   | [🎬](https://youtu.be/nYdEUiysAis), [Designing-Cloud-Applications](assets/pdf/Designing-Cloud-Applications.pdf)                       | [🎬](https://youtu.be/rJr_JYp0xgI), [Cloud Services](assets/pdf/Choosing-Cloud-Services.pdf), [Assignment 2](assignments/2.md) |
+| 5 (9/28)   | [Quiz 1](https://lms.gvsu.edu/)                                                                                                      | [🎬](https://youtu.be/fF6odSsODZ0), [Networking Fundamentals](assets/pdf/Cloud-Networking-Fundamentals.pdf)                    |
+| 6 (10/5)   | [🎬](https://youtu.be/Coi1EulQhBk), [Connecting Cloud Networks](assets/pdf/6-1-Connecting-Cloud-Networks.pdf)                         | [🎬](https://youtu.be/9CINREzwS3M), [Cloud Load Balancing](assets/pdf/6-2-Cloud-Load-Balancing.pdf)                            |
+| 7 (10/12)  | [Midterm- Study Guide](exams/midterm-study-guide.md)                                                                                 | **Midterm Exam**                                                                                                              |
+| 8 (10/19)  | [🎬](https://youtu.be/MhSwnH4pnCQ), [Design Patterns 1](assets/pdf/8-1-Cloud-Design-Patterns-1.pdf), [Assignment 3](assignments/3.md) | [🎬](https://youtu.be/H5NBM5YeMmE), [Design Patterns 2](assets/pdf/8-2-Cloud-Design-Patterns-2.pdf)                            |
+| 9 (10/26)  | **Fall Break No Class**                                                                                                              | [🎬](https://youtu.be/Bgqtt4isZLY), [Microservices](assets/pdf/9-2-Microservices.pdf)                                          |
+| 10 (11/2)  | [🎬](https://youtu.be/Q-QlhEISA50), [Serverless Functions](assets/pdf/10-1-Microservices.pdf)                                         | [🎬](https://youtu.be/k2Xdbhfb_-Y), [Geographic Issues](assets/pdf/10-2-Geographic-Issues.pdf)                                 |
+| 11 (11/9)  | [Cloud Security 1](assets/pdf/11-1-Cloud-Security-I.pdf)                                                                             | Cloud Security 2                                                                                                              |
+| 12 (11/16) | Normal and Big Data 1                                                                                                                | Normal and Big Data 2                                                                                                         |
+| 13 (11/23) | Normal and Big Data 3                                                                                                                | **Thanksgiving Recess – No Class**                                                                                            |
+| 14 (11/30) | APIs                                                                                                                                 | Cloud Run and Cloud Build                                                                                                     |
+| 15 (12/7)  | Operations                                                                                                                           | Final Presentation                                                                                                            |
+| 16(12/14)  | **No Regular Class**                                                                                                                 | **Final Exam**                                                                                                                |
